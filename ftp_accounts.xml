@@ -1,0 +1,27 @@
+!--
+	Get-FTPData.ps1 standard configuration file
+-->
+
+<accounts>
+	<kis>
+		<target
+			server="ftptest.kragt.pro"
+			security="Ftp"
+			posttransfer="delete"
+			username="username1"
+			password="password1"
+		/>
+
+		<environment
+			remotefolder="/"
+			localfolder="c:\tmp\ftp2"
+		/>
+
+		<settings
+			lastrun=""
+			prerunabort="false"
+			rununtil="12"
+			signalfile="ok.dat"
+		/>
+	</kis>
+</accounts>
